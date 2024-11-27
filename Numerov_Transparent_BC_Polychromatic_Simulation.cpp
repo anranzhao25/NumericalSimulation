@@ -9,7 +9,7 @@
 #include <complex>
 #include <cmath>
 #include <fstream>
-#include <direct.h>
+#include "Header.h"
 #include <boost/math/special_functions/legendre.hpp>
 #include <sys/stat.h>
 #include <sys/types.h>
