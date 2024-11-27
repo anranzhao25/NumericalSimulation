@@ -11,7 +11,8 @@
 #include <fstream>
 #include <direct.h>
 #include <boost/math/special_functions/legendre.hpp>
-#include "Header.h"
+#include <sys/stat.h>
+#include <sys/types.h>
 
 using namespace std;
 using namespace std::complex_literals;
@@ -411,7 +412,7 @@ int main() {
     // Simuation Location:
     string folder = "/Polychromatic_Rough_Step";
     string data_directory = "G:/My Drive/Research/Whispering Gallery/Numerical Simulation/Data" + folder;
-    _mkdir(data_directory.c_str());
+    mkdir(data_directory.c_str(), 0777);
 
     string par_file_name = "/sim_par.dat";
     string sim_file_name = "/sim_data.dat";
