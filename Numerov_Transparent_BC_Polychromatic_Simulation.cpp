@@ -411,8 +411,12 @@ int main() {
 
     // Simuation Location:
     string folder = "/Polychromatic_Rough_Step";
-    string data_directory = "G:/My Drive/Research/Whispering Gallery/Numerical Simulation/Data" + folder;
-    mkdir(data_directory.c_str(), 0777);
+    string base_directory = "/Users/anranzhao/Downloads/NumSimData";
+    string data_directory = base_directory + folder;
+
+    // Create the directory if it doesn't exist
+    mkdir(base_directory.c_str(), 0777);       // Create base directory
+    mkdir(data_directory.c_str(), 0777);      // Create subdirectory
 
     string par_file_name = "/sim_par.dat";
     string sim_file_name = "/sim_data.dat";
