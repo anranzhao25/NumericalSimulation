@@ -6,7 +6,8 @@
 #include <complex>
 #include <cmath>
 #include <fstream>
-#include <direct.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 using namespace std;
 using namespace std::complex_literals;
