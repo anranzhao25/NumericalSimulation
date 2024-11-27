@@ -9,10 +9,10 @@
 #include <complex>
 #include <cmath>
 #include <fstream>
-#include "Header.h"
-#include <boost/math/special_functions/legendre.hpp>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <boost/math/special_functions/legendre.hpp>
+#include "Header.h"
 
 using namespace std;
 using namespace std::complex_literals;
@@ -413,7 +413,7 @@ int main() {
     string folder = "/Polychromatic_Rough_Step";
     string base_directory = "/Users/anranzhao/Downloads/NumSimData";
     string data_directory = base_directory + folder;
-
+    
     // Create the directory if it doesn't exist
     mkdir(base_directory.c_str(), 0777);       // Create base directory
     mkdir(data_directory.c_str(), 0777);      // Create subdirectory
